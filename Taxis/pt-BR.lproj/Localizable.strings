@@ -1,0 +1,24 @@
+/* Message shown when the selected taxi is Available */
+"Available" = "Disponível";
+
+/* Message shown when the selected taxi is NOT Available */
+"Buzy" = "Ocupado";
+
+/* Full message explanation */
+"It was not possible to retrieve any infomation from our servers. Please check your connections" = "Não foi possível receber informações de nossos servidores. Por favor, verifique suas conexões";
+
+/* This message is displayed when the system can't find any taxi on surroundings */
+"No taxi is available" = "Nenhum táxi disponível";
+
+/* This occurs when user tries to fetch soma data from internet but he is not connected */
+"Not connected" = "Sem comunicação";
+
+/* Callout pin text */
+"Taxi" = "Táxi";
+
+/* App name title */
+"Taxis" = "Táxis";
+
+/* Full message explanation */
+"The app could not find any taxi in our surroundings" = "Não foi possível encontrar nenhum táxi disponível nas redondezas";
+

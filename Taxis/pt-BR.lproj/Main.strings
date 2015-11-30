@@ -1,0 +1,9 @@
+/* Class = "UISegmentedControl"; 3bx-yZ-bqc.segmentTitles[0] = "Map"; ObjectID = "3bx-yZ-bqc"; */
+"3bx-yZ-bqc.segmentTitles[0]" = "Mapa";
+
+/* Class = "UISegmentedControl"; 3bx-yZ-bqc.segmentTitles[1] = "Satellite"; ObjectID = "3bx-yZ-bqc"; */
+"3bx-yZ-bqc.segmentTitles[1]" = "Satélite";
+
+/* Class = "UISegmentedControl"; 3bx-yZ-bqc.segmentTitles[2] = "Hybrid"; ObjectID = "3bx-yZ-bqc"; */
+"3bx-yZ-bqc.segmentTitles[2]" = "Híbrido";
+

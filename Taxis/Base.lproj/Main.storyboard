@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fIy-02-OT3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Taxis View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TaxisViewController" customModule="Taxis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA1-m8-gK1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="620"/>
+                                <animations/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3bx-yZ-bqc">
+                                <rect key="frame" x="200" y="72" width="200" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.5117726293" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cm1-eZ-svG"/>
+                                    <constraint firstAttribute="width" constant="200" id="nPt-hw-7dG"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nPt-hw-7dG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="KlK-Nd-ABu"/>
+                                </connections>
+                            </segmentedControl>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33N-H6-jBC">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem image="user_pin" style="plain" id="O8q-87-gbJ">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="sowUserLocationButtonPressed:" destination="BYZ-38-t0r" id="Hmt-Ca-Itd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JYB-L6-7S0"/>
+                                    <barButtonItem systemItem="refresh" id="NIB-hH-zuN">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="updateButtonPressed:" destination="BYZ-38-t0r" id="LqN-cV-jCz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jA1-m8-gK1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5hB-Iv-ouz"/>
+                            <constraint firstAttribute="trailing" secondItem="jA1-m8-gK1" secondAttribute="trailing" id="7s3-7L-rYn"/>
+                            <constraint firstItem="33N-H6-jBC" firstAttribute="leading" secondItem="jA1-m8-gK1" secondAttribute="leading" id="G7L-t1-7rD"/>
+                            <constraint firstItem="33N-H6-jBC" firstAttribute="trailing" secondItem="jA1-m8-gK1" secondAttribute="trailing" id="Nkg-nw-RgI"/>
+                            <constraint firstItem="3bx-yZ-bqc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="WWC-BU-x06"/>
+                            <constraint firstItem="33N-H6-jBC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eOK-ww-ubU"/>
+                            <constraint firstItem="jA1-m8-gK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eiX-MZ-bDM"/>
+                            <constraint firstItem="3bx-yZ-bqc" firstAttribute="centerX" secondItem="jA1-m8-gK1" secondAttribute="centerX" id="foX-lx-GhL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jA1-m8-gK1" secondAttribute="bottom" constant="-20" id="h3i-iB-OJC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rkk-Md-evY"/>
+                    <connections>
+                        <outlet property="mapView" destination="jA1-m8-gK1" id="EpF-Ev-baq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="491"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C51-1v-ssz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fIy-02-OT3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wDH-8r-Gkk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3o4-za-lDR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQj-sx-dFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="491"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="user_pin" width="23" height="32"/>
+    </resources>
+</document>

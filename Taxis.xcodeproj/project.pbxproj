@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D82896611C0B800200ACF0FE /* TaxisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82896601C0B800200ACF0FE /* TaxisModel.swift */; };
+		D82896631C0B863B00ACF0FE /* MKTaxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82896621C0B863B00ACF0FE /* MKTaxi.swift */; };
+		D82896651C0BBE1A00ACF0FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82896641C0BBE1A00ACF0FE /* MapKit.framework */; };
+		D8C549DE1C0C6C9800B8BFEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C549E01C0C6C9800B8BFEC /* InfoPlist.strings */; };
+		D8C549E31C0C6C9800B8BFEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C549E51C0C6C9800B8BFEC /* Localizable.strings */; };
+		D8F3DCDC1C0A384E00515AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3DCDB1C0A384E00515AC5 /* AppDelegate.swift */; };
+		D8F3DCDE1C0A384E00515AC5 /* TaxisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3DCDD1C0A384E00515AC5 /* TaxisViewController.swift */; };
+		D8F3DCE11C0A384E00515AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DCDF1C0A384E00515AC5 /* Main.storyboard */; };
+		D8F3DCE31C0A384E00515AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DCE21C0A384E00515AC5 /* Assets.xcassets */; };
+		D8F3DCE61C0A384E00515AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DCE41C0A384E00515AC5 /* LaunchScreen.storyboard */; };
+		D8F3DCF31C0A64B300515AC5 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3DCF21C0A64B300515AC5 /* JSONParser.swift */; };
+		D8F3DCF71C0A7D7800515AC5 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3DCF61C0A7D7800515AC5 /* Taxi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D82896601C0B800200ACF0FE /* TaxisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxisModel.swift; sourceTree = "<group>"; };
+		D82896621C0B863B00ACF0FE /* MKTaxi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTaxi.swift; sourceTree = "<group>"; };
+		D82896641C0BBE1A00ACF0FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D8C549DA1C0C692100B8BFEC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8C549DB1C0C692100B8BFEC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D8C549DF1C0C6C9800B8BFEC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D8C549E41C0C6C9800B8BFEC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8F3DCD81C0A384E00515AC5 /* Taxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F3DCDB1C0A384E00515AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Taxis/AppDelegate.swift; sourceTree = "<group>"; };
+		D8F3DCDD1C0A384E00515AC5 /* TaxisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxisViewController.swift; sourceTree = "<group>"; };
+		D8F3DCE01C0A384E00515AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8F3DCE21C0A384E00515AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Taxis/Assets.xcassets; sourceTree = "<group>"; };
+		D8F3DCE51C0A384E00515AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8F3DCE71C0A384E00515AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Taxis/Info.plist; sourceTree = "<group>"; };
+		D8F3DCF21C0A64B300515AC5 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		D8F3DCF61C0A7D7800515AC5 /* Taxi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8F3DCD51C0A384E00515AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82896651C0BBE1A00ACF0FE /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8F3DCCF1C0A384E00515AC5 = {
+			isa = PBXGroup;
+			children = (
+				D82896641C0BBE1A00ACF0FE /* MapKit.framework */,
+				D8F3DCDA1C0A384E00515AC5 /* Taxis */,
+				D8F3DCED1C0A38D900515AC5 /* Supporting Files */,
+				D8F3DCD91C0A384E00515AC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8F3DCD91C0A384E00515AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8F3DCD81C0A384E00515AC5 /* Taxis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8F3DCDA1C0A384E00515AC5 /* Taxis */ = {
+			isa = PBXGroup;
+			children = (
+				D8F3DCDD1C0A384E00515AC5 /* TaxisViewController.swift */,
+				D8F3DCDF1C0A384E00515AC5 /* Main.storyboard */,
+				D8F3DCF21C0A64B300515AC5 /* JSONParser.swift */,
+				D8F3DCF61C0A7D7800515AC5 /* Taxi.swift */,
+				D82896601C0B800200ACF0FE /* TaxisModel.swift */,
+				D82896621C0B863B00ACF0FE /* MKTaxi.swift */,
+			);
+			path = Taxis;
+			sourceTree = "<group>";
+		};
+		D8F3DCED1C0A38D900515AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C549E51C0C6C9800B8BFEC /* Localizable.strings */,
+				D8C549E01C0C6C9800B8BFEC /* InfoPlist.strings */,
+				D8F3DCDB1C0A384E00515AC5 /* AppDelegate.swift */,
+				D8F3DCE21C0A384E00515AC5 /* Assets.xcassets */,
+				D8F3DCE41C0A384E00515AC5 /* LaunchScreen.storyboard */,
+				D8F3DCE71C0A384E00515AC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8F3DCD71C0A384E00515AC5 /* Taxis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F3DCEA1C0A384E00515AC5 /* Build configuration list for PBXNativeTarget "Taxis" */;
+			buildPhases = (
+				D8F3DCD41C0A384E00515AC5 /* Sources */,
+				D8F3DCD51C0A384E00515AC5 /* Frameworks */,
+				D8F3DCD61C0A384E00515AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taxis;
+			productName = Taxis;
+			productReference = D8F3DCD81C0A384E00515AC5 /* Taxis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8F3DCD01C0A384E00515AC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Helton Rosa";
+				TargetAttributes = {
+					D8F3DCD71C0A384E00515AC5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5T9665B9B5;
+					};
+				};
+			};
+			buildConfigurationList = D8F3DCD31C0A384E00515AC5 /* Build configuration list for PBXProject "Taxis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8F3DCCF1C0A384E00515AC5;
+			productRefGroup = D8F3DCD91C0A384E00515AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8F3DCD71C0A384E00515AC5 /* Taxis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8F3DCD61C0A384E00515AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C549E31C0C6C9800B8BFEC /* Localizable.strings in Resources */,
+				D8F3DCE61C0A384E00515AC5 /* LaunchScreen.storyboard in Resources */,
+				D8C549DE1C0C6C9800B8BFEC /* InfoPlist.strings in Resources */,
+				D8F3DCE31C0A384E00515AC5 /* Assets.xcassets in Resources */,
+				D8F3DCE11C0A384E00515AC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8F3DCD41C0A384E00515AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F3DCDE1C0A384E00515AC5 /* TaxisViewController.swift in Sources */,
+				D8F3DCF71C0A7D7800515AC5 /* Taxi.swift in Sources */,
+				D8F3DCDC1C0A384E00515AC5 /* AppDelegate.swift in Sources */,
+				D82896631C0B863B00ACF0FE /* MKTaxi.swift in Sources */,
+				D8F3DCF31C0A64B300515AC5 /* JSONParser.swift in Sources */,
+				D82896611C0B800200ACF0FE /* TaxisModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8C549E01C0C6C9800B8BFEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C549DF1C0C6C9800B8BFEC /* pt-BR */,
+			);
+			name = InfoPlist.strings;
+			path = Taxis;
+			sourceTree = "<group>";
+		};
+		D8C549E51C0C6C9800B8BFEC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C549E41C0C6C9800B8BFEC /* pt-BR */,
+			);
+			name = Localizable.strings;
+			path = Taxis;
+			sourceTree = "<group>";
+		};
+		D8F3DCDF1C0A384E00515AC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F3DCE01C0A384E00515AC5 /* Base */,
+				D8C549DA1C0C692100B8BFEC /* pt-BR */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8F3DCE41C0A384E00515AC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F3DCE51C0A384E00515AC5 /* Base */,
+				D8C549DB1C0C692100B8BFEC /* pt-BR */,
+			);
+			name = LaunchScreen.storyboard;
+			path = Taxis;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8F3DCE81C0A384E00515AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8F3DCE91C0A384E00515AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F3DCEB1C0A384E00515AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Taxis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.evolvement.Taxis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D8F3DCEC1C0A384E00515AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Taxis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.evolvement.Taxis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8F3DCD31C0A384E00515AC5 /* Build configuration list for PBXProject "Taxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F3DCE81C0A384E00515AC5 /* Debug */,
+				D8F3DCE91C0A384E00515AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8F3DCEA1C0A384E00515AC5 /* Build configuration list for PBXNativeTarget "Taxis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F3DCEB1C0A384E00515AC5 /* Debug */,
+				D8F3DCEC1C0A384E00515AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8F3DCD01C0A384E00515AC5 /* Project object */;
+}
